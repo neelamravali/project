@@ -1,0 +1,14 @@
+pipeline{
+    agent any 
+
+    stages{
+            stage("Git Checkout"){
+            
+            steps{
+                gitCheckout(
+                    git branch: 'main', url: 'https://github.com/neelamravali/mrdevops_java_app.git'
+            )}
+            }
+            }
+} hai abhxbmjnxkamx
+
